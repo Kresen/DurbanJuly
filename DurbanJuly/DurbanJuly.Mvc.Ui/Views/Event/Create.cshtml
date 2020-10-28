@@ -1,0 +1,58 @@
+﻿@model DurbanJuly.Models.EventModel
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+}
+
+<hr />
+<div class="row">
+    <div class="col-md-6 offset-md-3">
+        <div class="card">
+            <div class="card-header text-center">
+                <strong>Create a new Event</strong>
+            </div>
+            <div class="card-body">
+                <form asp-action="Create">
+                    <input asp-for="TournamentId" class="form-control" type="hidden" />
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <div class="form-group">
+                        <label asp-for="Name" class="control-label"></label>
+                        <input asp-for="Name" class="form-control" />
+                        <span asp-validation-for="Name" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Number" class="control-label"></label>
+                        <input asp-for="Number" class="form-control" />
+                        <span asp-validation-for="Number" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="EventDateTime" class="control-label"></label>
+                        <input asp-for="EventDateTime" class="form-control" />
+                        <span asp-validation-for="EventDateTime" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="EventEndDateTime" class="control-label"></label>
+                        <input asp-for="EventEndDateTime" class="form-control" />
+                        <span asp-validation-for="EventEndDateTime" class="text-danger"></span>
+                    </div>
+                    <div class="form-group form-check">
+                        <label class="form-check-label">
+                            <input class="form-check-input" asp-for="AutoClose" /> @Html.DisplayNameFor(model => model.AutoClose)
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" value="Create" class="btn btn-primary" />
+                    </div>
+                </form>
+                <div>
+                    <a asp-action="Index" asp-route-id="@Model?.TournamentId">Back to List</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+

@@ -1,0 +1,283 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Projects\\DurbanJuly\\DurbanJuly\\DurbanJuly.Infrastructure.Data\\DurbanJuly.Infrastructure.Data.csproj": {}
+  },
+  "projects": {
+    "C:\\Projects\\DurbanJuly\\DurbanJuly\\DurbanJuly.Common\\DurbanJuly.Common.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Projects\\DurbanJuly\\DurbanJuly\\DurbanJuly.Common\\DurbanJuly.Common.csproj",
+        "projectName": "DurbanJuly.Common",
+        "projectPath": "C:\\Projects\\DurbanJuly\\DurbanJuly\\DurbanJuly.Common\\DurbanJuly.Common.csproj",
+        "packagesPath": "C:\\Users\\krese\\.nuget\\packages\\",
+        "outputPath": "C:\\Projects\\DurbanJuly\\DurbanJuly\\DurbanJuly.Common\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\krese\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[10.1.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.9, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Projects\\DurbanJuly\\DurbanJuly\\DurbanJuly.Domain\\DurbanJuly.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Projects\\DurbanJuly\\DurbanJuly\\DurbanJuly.Domain\\DurbanJuly.Domain.csproj",
+        "projectName": "DurbanJuly.Domain",
+        "projectPath": "C:\\Projects\\DurbanJuly\\DurbanJuly\\DurbanJuly.Domain\\DurbanJuly.Domain.csproj",
+        "packagesPath": "C:\\Users\\krese\\.nuget\\packages\\",
+        "outputPath": "C:\\Projects\\DurbanJuly\\DurbanJuly\\DurbanJuly.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\krese\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "C:\\Projects\\DurbanJuly\\DurbanJuly\\DurbanJuly.Common\\DurbanJuly.Common.csproj": {
+                "projectPath": "C:\\Projects\\DurbanJuly\\DurbanJuly\\DurbanJuly.Common\\DurbanJuly.Common.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.Extensions.Identity.Stores": {
+              "target": "Package",
+              "version": "[3.1.9, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Projects\\DurbanJuly\\DurbanJuly\\DurbanJuly.Infrastructure.Data\\DurbanJuly.Infrastructure.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Projects\\DurbanJuly\\DurbanJuly\\DurbanJuly.Infrastructure.Data\\DurbanJuly.Infrastructure.Data.csproj",
+        "projectName": "DurbanJuly.Infrastructure.Data",
+        "projectPath": "C:\\Projects\\DurbanJuly\\DurbanJuly\\DurbanJuly.Infrastructure.Data\\DurbanJuly.Infrastructure.Data.csproj",
+        "packagesPath": "C:\\Users\\krese\\.nuget\\packages\\",
+        "outputPath": "C:\\Projects\\DurbanJuly\\DurbanJuly\\DurbanJuly.Infrastructure.Data\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\krese\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "C:\\Projects\\DurbanJuly\\DurbanJuly\\DurbanJuly.Domain\\DurbanJuly.Domain.csproj": {
+                "projectPath": "C:\\Projects\\DurbanJuly\\DurbanJuly\\DurbanJuly.Domain\\DurbanJuly.Domain.csproj"
+              },
+              "C:\\Projects\\DurbanJuly\\DurbanJuly\\DurbanJuly.Models\\DurbanJuly.Models.csproj": {
+                "projectPath": "C:\\Projects\\DurbanJuly\\DurbanJuly\\DurbanJuly.Models\\DurbanJuly.Models.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.9, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Projects\\DurbanJuly\\DurbanJuly\\DurbanJuly.Models\\DurbanJuly.Models.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Projects\\DurbanJuly\\DurbanJuly\\DurbanJuly.Models\\DurbanJuly.Models.csproj",
+        "projectName": "DurbanJuly.Models",
+        "projectPath": "C:\\Projects\\DurbanJuly\\DurbanJuly\\DurbanJuly.Models\\DurbanJuly.Models.csproj",
+        "packagesPath": "C:\\Users\\krese\\.nuget\\packages\\",
+        "outputPath": "C:\\Projects\\DurbanJuly\\DurbanJuly\\DurbanJuly.Models\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\krese\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "C:\\Projects\\DurbanJuly\\DurbanJuly\\DurbanJuly.Common\\DurbanJuly.Common.csproj": {
+                "projectPath": "C:\\Projects\\DurbanJuly\\DurbanJuly\\DurbanJuly.Common\\DurbanJuly.Common.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.AspNetCore.Mvc.ViewFeatures": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

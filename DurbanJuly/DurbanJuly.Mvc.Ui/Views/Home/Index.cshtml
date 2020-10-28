@@ -1,0 +1,42 @@
+﻿@model List<TournamentModel>
+@{
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+}
+
+
+    <h1>Tournaments</h1>
+
+    <p class="text-right">
+        <a asp-controller="Tournament" class=" btn btn-success" asp-action="Create">Create New</a>
+    </p>
+    <table class="table  table-dark">
+        <thead>
+            <tr>
+                <th>
+                    Active Tournaments
+                </th>
+                <th>Events</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.EventCount)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", "Tournament", new { id = item.Id }, new { @class = "btn btn-warning" }) |
+                    @Html.ActionLink("View Events", "Index", "Event", new { id = item.Id }, new { @class = "btn btn-info" }) |
+                    @Html.ActionLink("Delete", "Delete", "Tournament", new { id = item.Id }, new { @class = "btn btn-danger" })
+                </td>
+            </tr>
+            }
+        </tbody>
+    </table>
+
+

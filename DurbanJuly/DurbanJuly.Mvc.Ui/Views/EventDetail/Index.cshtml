@@ -1,0 +1,65 @@
+﻿@model IEnumerable<DurbanJuly.Models.EventDetailModel>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+}
+
+    <h1> Event Details</h1>
+
+<p class="text-right">
+    <a asp-action="Create" class=" btn btn-success" asp-route-id="@ViewBag.Id">Create New</a>
+</p>
+<table class="table table-dark">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Number)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Odd)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FinishingPosition)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FirstTimer)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.StatusName)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Number)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Odd)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FinishingPosition)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FirstTimer)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.StatusName)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id=item.Id}, new { @class = "btn btn-warning" }) |
+                @Html.ActionLink("Delete", "Delete", new { id=item.Id  }, new { @class = "btn btn-danger" })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

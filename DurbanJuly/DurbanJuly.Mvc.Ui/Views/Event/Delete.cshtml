@@ -1,0 +1,58 @@
+﻿@model DurbanJuly.Models.EventModel
+
+@{
+    ViewData["Title"] = "Delete";
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+}
+
+<div>
+    <hr />
+    <dl class="row">
+        <div class="col-md-6 offset-md-3">
+            <div class="card">
+                <div class="card-header text-center">
+                    <strong>Are you sure you want to delete this event?</strong>
+                </div>
+                <div class="card-body">
+                    <dt class="col-sm-6">
+                        @Html.DisplayNameFor(model => model.Name)
+                    </dt>
+                    <dd class="col-sm-6">
+                        @Html.DisplayFor(model => model.Name)
+                    </dd>
+                    <dt class="col-sm-6">
+                        @Html.DisplayNameFor(model => model.Number)
+                    </dt>
+                    <dd class="col-sm-6">
+                        @Html.DisplayFor(model => model.Number)
+                    </dd>
+                    <dt class="col-sm-6">
+                        @Html.DisplayNameFor(model => model.EventDateTime)
+                    </dt>
+                    <dd class="col-sm-6">
+                        @Html.DisplayFor(model => model.EventDateTime)
+                    </dd>
+                    <dt class="col-sm-6">
+                        @Html.DisplayNameFor(model => model.EventEndDateTime)
+                    </dt>
+                    <dd class="col-sm-6">
+                        @Html.DisplayFor(model => model.EventEndDateTime)
+                    </dd>
+                    <dt class="col-sm-6">
+                        @Html.DisplayNameFor(model => model.AutoClose)
+                    </dt>
+                    <dd class="col-sm-6">
+                        @Html.DisplayFor(model => model.AutoClose)
+                    </dd>
+                    <form asp-action="Delete">
+                        <input asp-for="Id" type="hidden">
+                        <input type="submit" value="Delete" class="btn btn-danger" /> |
+                        <a asp-action="Index" asp-route-id="@Model.TournamentId">Back to List</a>
+                    </form>
+                    </div>
+                </div>
+            </div>
+</dl>
+    
+
+</div>

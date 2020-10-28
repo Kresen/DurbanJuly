@@ -1,0 +1,67 @@
+﻿@model DurbanJuly.Models.EventDetailModel
+
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+}
+
+<hr />
+<div class="row">
+    <div class="col-md-6 offset-md-3">
+        <div class="card">
+            <div class="card-header text-center">
+                <strong>Edit Event</strong>
+            </div>
+            <div class="card-body">
+                <form asp-action="Edit">
+                    <input asp-for="Id" type="hidden" class="form-control" />
+                    <input asp-for="EventId" type="hidden" class="form-control" />
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                    <div class="form-group">
+                        <label asp-for="Name" class="control-label"></label>
+                        <input asp-for="Name" class="form-control" />
+                        <span asp-validation-for="Name" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Number" class="control-label"></label>
+                        <input asp-for="Number" class="form-control" />
+                        <span asp-validation-for="Number" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Odd" class="control-label"></label>
+                        <input asp-for="Odd" class="form-control" />
+                        <span asp-validation-for="Odd" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="FinishingPosition" class="control-label"></label>
+                        <input asp-for="FinishingPosition" class="form-control" />
+                        <span asp-validation-for="FinishingPosition" class="text-danger"></span>
+                    </div>
+                    <div class="form-group form-check">
+                        <label class="form-check-label">
+                            <input class="form-check-input" asp-for="FirstTimer" /> @Html.DisplayNameFor(model => model.FirstTimer)
+                        </label>
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="EventDetailStatusId" class="control-label"></label>
+                        <select asp-for="EventDetailStatusId" class="form-control" asp-items="@Model.Statuses"></select>
+                        <span asp-validation-for="EventDetailStatusId" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" value="Save" class="btn btn-primary" />
+                    </div>
+                </form>
+
+                <div>
+                    <a asp-action="Index" asp-route-id="@Model.EventId">Back to List</a>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+
+       
+
